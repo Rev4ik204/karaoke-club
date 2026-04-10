@@ -1,0 +1,55 @@
+
+@font-face {
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/MullerRegular/MullerRegular.ttf") format("truetype");
+  src: url("../fonts/MullerRegular/MullerRegular.eot") format("eot");
+  src: url("../fonts/MullerRegular/MullerRegular.woff") format("woff");
+  src: url("../fonts/MullerRegular/MullerRegular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/MullerMedium/MullerMedium.ttf") format("truetype");
+  src: url("../fonts/MullerMedium/MullerMedium.eot") format("eot");
+  src: url("../fonts/MullerMedium/MullerMedium.woff") format("woff");
+  src: url("../fonts/MullerMedium/MullerMedium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/MullerBold/MullerBold.ttf") format("truetype");
+  src: url("../fonts/MullerBold/MullerBold.eot") format("eot");
+  src: url("../fonts/MullerBold/MullerBold.woff") format("woff");
+  src: url("../fonts/MullerBold/MullerBold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("../fonts/MullerExtraBold/MullerExtraBold.ttf") format("truetype");
+  src: url("../fonts/MullerExtraBold/MullerExtraBold.eot") format("eot");
+  src: url("../fonts/MullerExtraBold/MullerExtraBold.woff") format("woff");
+  src: url("../fonts/MullerExtraBold/MullerExtraBold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("../fonts/MullerBlack/MullerBlack.ttf") format("truetype");
+  src: url("../fonts/MullerBlack/MullerBlack.eot") format("eot");
+  src: url("../fonts/MullerBlack/MullerBlack.woff") format("woff");
+  src: url("../fonts/MullerBlack/MullerBlack.woff2") format("woff2");
+}

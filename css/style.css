@@ -1,0 +1,45 @@
+@import url("./fons.css");
+
+:root {
+  --font-family: "Muller", sans-serif;
+}
+
+body {
+  box-sizing: border-box;
+
+  background-color: #252121;
+  color: #ffffff;
+}
+
+.container {
+  max-width: 1920px;
+}
+
+/* =====HEADER===== */
+
+.header .container {
+  padding: 40px 50px 33px 40px;
+
+  border-bottom:3px dashed #777575 ;
+}
+
+.logo_link {
+}
+
+.tell_box {
+}
+
+.tell_text {
+}
+
+.location_box {
+}
+
+.location_text {
+}
+
+.our_hall_btn {
+}
+
+.reserve_btn {
+}
