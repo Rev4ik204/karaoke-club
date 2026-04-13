@@ -32,6 +32,8 @@ body {
 .tell_text {
 }
 
+.svg_block{}
+
 .location_box {
 }
 
@@ -39,7 +41,34 @@ body {
 }
 
 .our_hall_btn {
+  border: 1px solid #393c43;
+border-radius: 40px;
+width: 204px;
+height: 60px;
+
+background: rgba(255, 255, 255, 0);
+
+font-family: var(--font-family);
+font-weight: 700;
+font-size: 13px;
+letter-spacing: 0.05em;
+text-transform: uppercase;
+text-align: center;
+color: #fff;
 }
 
 .reserve_btn {
+  border-radius: 40px;
+width: 204px;
+height: 60px;
+
+background: #fff;
+
+font-family: var(--font-family);
+font-weight: 700;
+font-size: 13px;
+letter-spacing: 0.05em;
+text-transform: uppercase;
+text-align: center;
+color: #000;
 }
