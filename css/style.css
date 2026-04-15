@@ -7,7 +7,7 @@
 body {
   box-sizing: border-box;
 
-  background-color: #252121;
+  background-color: #1A0B0B;
   color: #ffffff;
 }
 
@@ -20,55 +20,88 @@ body {
 .header .container {
   padding: 40px 50px 33px 40px;
 
-  border-bottom:3px dashed #777575 ;
+  border-bottom: 3px dashed #777575;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logo_link {
 }
 
-.tell_box {
+.tell_box,
+.location_box {
+  display: flex;
+  align-items: center;
+  gap: 17px;
 }
 
 .tell_text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 0.03em;
+  color: #fff;
 }
 
-.svg_block{}
+.svg_block {
+  border-radius: 40px;
+  width: 60px;
+  height: 60px;
+
+  background: rgba(255, 255, 255, 0.07);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  svg {
+    width: 29px;
+    height: 29px;
+  }
+}
 
 .location_box {
 }
 
 .location_text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 0.03em;
+  color: #f69020;
 }
 
 .our_hall_btn {
   border: 1px solid #393c43;
-border-radius: 40px;
-width: 204px;
-height: 60px;
+  border-radius: 40px;
+  width: 204px;
+  height: 60px;
 
-background: rgba(255, 255, 255, 0);
+  background: rgba(255, 255, 255, 0);
 
-font-family: var(--font-family);
-font-weight: 700;
-font-size: 13px;
-letter-spacing: 0.05em;
-text-transform: uppercase;
-text-align: center;
-color: #fff;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
 }
 
 .reserve_btn {
   border-radius: 40px;
-width: 204px;
-height: 60px;
+  width: 204px;
+  height: 60px;
 
-background: #fff;
+  background: #fff;
 
-font-family: var(--font-family);
-font-weight: 700;
-font-size: 13px;
-letter-spacing: 0.05em;
-text-transform: uppercase;
-text-align: center;
-color: #000;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000;
 }
