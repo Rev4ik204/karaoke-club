@@ -7,7 +7,7 @@
 body {
   box-sizing: border-box;
 
-  background-color: #1A0B0B;
+  background-color: #1a0b0b;
   color: #ffffff;
 }
 
@@ -28,6 +28,13 @@ body {
 }
 
 .logo_link {
+}
+
+.header_contact_box,
+.header_btn_box {
+  display: flex;
+  gap: 40px;
+  align-items: center;
 }
 
 .tell_box,
@@ -104,4 +111,198 @@ body {
   text-transform: uppercase;
   text-align: center;
   color: #000;
+}
+
+/* =====HERO===== */
+
+.hero .container {
+  position: relative;
+
+  margin-top: -136px;
+  padding-top: 220px;
+  padding-left: 51px;
+}
+
+.hero_title {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 41px;
+  line-height: 200%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
+
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.hero_pre_title {
+  font-family: var(--font-family);
+  font-weight: 900;
+  font-size: 75px;
+  line-height: 125%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
+
+  width: 850px;
+  margin-bottom: 70px;
+}
+
+.hero_title,
+.hero_pre_title,
+.hero_benefits_list {
+  position: relative;
+  z-index: 1;
+}
+
+.hero_benefits_list {
+  display: flex;
+  align-items: center;
+  gap: 21px;
+
+  margin-bottom: 73px;
+}
+
+.hero_benefits_item {
+  display: flex;
+  align-items: center;
+  gap: 21px;
+}
+
+.hero_svg_block {
+  svg {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.hero_benefits_text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 133%;
+  letter-spacing: 0.03em;
+  color: #fff;
+
+  width: 190px;
+}
+
+.lock {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 0.03em;
+  color: #fff;
+
+  border-radius: 60px;
+  width: 113px;
+  height: 27px;
+
+  background: #343a3e;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top: 433px;
+  left: 686px;
+}
+
+.hero_btn {
+  border-radius: 60px;
+  width: 277px;
+  height: 70px;
+
+  background: linear-gradient(141deg, #ea422a 0%, #f69020 47.92%, #ffc619 100%);
+
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #252121;
+}
+
+.hero_rectangle29 {
+  position: absolute;
+  top: 7px;
+  left: 204px;
+
+  width: 506px;
+  height: 864px;
+
+  background: linear-gradient(
+    180deg,
+    rgba(96, 101, 113, 0) 0%,
+    rgba(96, 101, 113, 0.05) 100%
+  );
+}
+
+.harizmahall_img {
+  position: absolute;
+  top: 159px;
+  left: 812px;
+  z-index: 0;
+}
+
+.hero_img {
+}
+
+.dancer_img {
+  position: absolute;
+  top: 26px;
+  left: 946px;
+  z-index: 1;
+}
+
+.mic_img {
+  position: absolute;
+  top: 465px;
+  left: 1291px;
+  z-index: 2;
+}
+
+.scrole_bottom {
+}
+
+.hero_contact_block {
+  position: absolute;
+  top: 570px;
+  left: 1700px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  align-items: center;
+}
+
+.telegram_btn {
+  width: 83px;
+  height: 83px;
+  border-radius: 100%;
+
+  background: linear-gradient(217deg, #ffc619 0%, #f69020 46.35%, #ec5128 100%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  svg {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+.hero_contact_text {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 9px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #f69020;
+
+  transform: rotate(-90deg);
 }
