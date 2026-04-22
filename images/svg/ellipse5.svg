@@ -1,0 +1,30 @@
+<svg width="348" height="348" viewBox="0 0 348 348" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g filter="url(#filter0_d_51_1001)">
+    <mask id="path-1-inside-1_51_1001" fill="white">
+      <path d="M296 157C296 224.379 241.379 279 174 279C106.621 279 52 224.379 52 157C52 89.6213 106.621 35 174 35C241.379 35 296 89.6213 296 157Z" />
+    </mask>
+    <g clip-path="url(#paint0_angular_51_1001_clip_path)" data-figma-skip-parse="true" mask="url(#path-1-inside-1_51_1001)">
+      <g transform="matrix(0 0.122 -0.122 0 174 157)">
+        <foreignObject x="-1057.38" y="-1057.38" width="2114.75" height="2114.75">
+          <div xmlns="http://www.w3.org/1999/xhtml" style="background:conic-gradient(from 90deg,rgba(250, 170, 28, 0.4962) 0deg,rgba(246, 144, 32, 0) 176.055deg,rgba(255, 198, 25, 1) 181.259deg,rgba(250, 170, 28, 0.4962) 360deg);height:100%;width:100%;opacity:0.66"></div>
+        </foreignObject>
+      </g>
+    </g>
+    <path d="M289 157C289 220.513 237.513 272 174 272V286C245.245 286 303 228.245 303 157H289ZM174 272C110.487 272 59 220.513 59 157H45C45 228.245 102.755 286 174 286V272ZM59 157C59 93.4873 110.487 42 174 42V28C102.755 28 45 85.7553 45 157H59ZM174 42C237.513 42 289 93.4873 289 157H303C303 85.7553 245.245 28 174 28V42Z" data-figma-gradient-fill="{&#34;type&#34;:&#34;GRADIENT_ANGULAR&#34;,&#34;stops&#34;:[{&#34;color&#34;:{&#34;r&#34;:0.96470588445663452,&#34;g&#34;:0.56470590829849243,&#34;b&#34;:0.12549020349979401,&#34;a&#34;:0.0},&#34;position&#34;:0.48904117941856384},{&#34;color&#34;:{&#34;r&#34;:1.0,&#34;g&#34;:0.77647060155868530,&#34;b&#34;:0.098039217293262482,&#34;a&#34;:1.0},&#34;position&#34;:0.50349736213684082}],&#34;stopsVar&#34;:[],&#34;transform&#34;:{&#34;m00&#34;:1.4940692183874199e-14,&#34;m01&#34;:-244.0,&#34;m02&#34;:296.0,&#34;m10&#34;:244.0,&#34;m11&#34;:1.4940692183874199e-14,&#34;m12&#34;:35.0},&#34;opacity&#34;:0.66000002622604370,&#34;blendMode&#34;:&#34;NORMAL&#34;,&#34;visible&#34;:true}" mask="url(#path-1-inside-1_51_1001)" />
+  </g>
+  <defs>
+    <filter id="filter0_d_51_1001" x="0" y="0" width="348" height="348" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+      <feOffset dy="17" />
+      <feGaussianBlur stdDeviation="26" />
+      <feComposite in2="hardAlpha" operator="out" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.58 0" />
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_51_1001" />
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_51_1001" result="shape" />
+    </filter>
+    <clipPath id="paint0_angular_51_1001_clip_path">
+      <path d="M289 157C289 220.513 237.513 272 174 272V286C245.245 286 303 228.245 303 157H289ZM174 272C110.487 272 59 220.513 59 157H45C45 228.245 102.755 286 174 286V272ZM59 157C59 93.4873 110.487 42 174 42V28C102.755 28 45 85.7553 45 157H59ZM174 42C237.513 42 289 93.4873 289 157H303C303 85.7553 245.245 28 174 28V42Z" mask="url(#path-1-inside-1_51_1001)" />
+    </clipPath>
+  </defs>
+</svg>

@@ -11,6 +11,10 @@ body {
   color: #ffffff;
 }
 
+button {
+  cursor: pointer;
+}
+
 .container {
   max-width: 1920px;
 }
@@ -25,6 +29,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  position: relative;
+  z-index: 5;
 }
 
 .logo_link {
@@ -224,6 +231,9 @@ body {
   text-transform: uppercase;
   text-align: center;
   color: #252121;
+
+  position: relative;
+  z-index: 1;
 }
 
 .hero_rectangle29 {
@@ -249,23 +259,48 @@ body {
 }
 
 .hero_img {
-}
-
-.dancer_img {
   position: absolute;
   top: 26px;
   left: 946px;
   z-index: 1;
+
+  width: 700px;
+  height: 974px;
+}
+
+.dancer_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 0 0;
 }
 
 .mic_img {
   position: absolute;
-  top: 465px;
-  left: 1291px;
+  top: 439px;
+  left: 345px;
   z-index: 2;
+
+  width: 167px;
+  height: 535px;
+  object-fit: cover;
+  object-position: 0 0;
 }
 
 .scrole_bottom {
+  font-family: var(--font-family);
+font-weight: 700;
+font-size: 9px;
+letter-spacing: 0.2em;
+text-transform: uppercase;
+color: #606571;
+
+transform: rotate(-90deg);
+
+position: absolute;
+top: 700px;
+left: 680px;
+
 }
 
 .hero_contact_block {
@@ -305,4 +340,16 @@ body {
   color: #f69020;
 
   transform: rotate(-90deg);
+}
+
+.birka {position: absolute;
+  top: 700px;
+  left: 970px;
+}
+
+.el3, .el5, .el6, .el7 {
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
 }
