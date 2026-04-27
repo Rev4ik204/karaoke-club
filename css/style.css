@@ -4,6 +4,25 @@
   --font-family: "Muller", sans-serif;
 }
 
+:root {
+  --transition1: transform 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+:root {
+  --gradient_main: linear-gradient(
+    217deg,
+    #ffc619 0%,
+    #f69020 46.35%,
+    #ec5128 100%
+  );
+  --gradient_hover: linear-gradient(
+    141deg,
+    #9e0ddc 0%,
+    #db0bcd 47.92%,
+    #19fffb 100%
+  );
+}
+
 body {
   box-sizing: border-box;
 
@@ -38,13 +57,13 @@ button {
 }
 
 .logo_icon {
-  transition: transform 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: var(--transition1);
 }
 
 .logo_icon:hover,
 .logo_icon:focus {
   transform: scale(1.2);
-  transition: transform 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: var(--transition1);
 }
 
 .header_contact_box,
@@ -104,12 +123,12 @@ button {
   .tell_text,
   .location_text {
     color: #f69020;
-    transition: transform 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: var(--transition1);
   }
   svg {
     filter: brightness(0) saturate(100%) invert(56%) sepia(98%) saturate(574%)
       hue-rotate(345deg) brightness(98%) contrast(96%);
-    transition: transform 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: var(--transition1);
   }
 }
 
@@ -135,11 +154,10 @@ button {
 .our_hall_btn:focus,
 .reserve_btn:hover,
 .reserve_btn:focus {
-  background: linear-gradient(141deg, #9e0ddc 0%, #db0bcd 47.92%, #19fffb 100%);
+  background: var(--gradient_hover);
 
-  
   /* color: #000; */
-  transition: transform 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: var(--transition1);
 }
 
 /* =====HERO===== */
@@ -244,7 +262,7 @@ button {
   width: 277px;
   height: 70px;
 
-  background: linear-gradient(141deg, #ea422a 0%, #f69020 47.92%, #ffc619 100%);
+  background: var(--gradient_main);
 
   font-family: var(--font-family);
   font-weight: 700;
@@ -257,14 +275,14 @@ button {
   position: relative;
   z-index: 1;
 
-  transition: transform 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: var(--transition1);
 }
 
 .hero_btn:focus,
 .hero_btn:hover {
-  background: linear-gradient(141deg, #9e0ddc 0%, #db0bcd 47.92%, #19fffb 100%);
+  background: var(--gradient_hover);
   color: #fff;
-  transition: transform 3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: var(--transition1);
   transform: scale(1.05);
 }
 
@@ -347,20 +365,15 @@ button {
 
 .hero_contact_block:hover,
 .hero_contact_block:focus {
-  transition: transform 3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: var(--transition1);
   transform: scale(1.05);
   .telegram_btn {
-    transition: transform 3s cubic-bezier(0.075, 0.82, 0.165, 1);
-    background: linear-gradient(
-      141deg,
-      #9e0ddc 0%,
-      #db0bcd 47.92%,
-      #19fffb 100%
-    );
+    transition: var(--transition1);
+    background: var(--gradient_hover);
   }
   .hero_contact_text {
-    transition: transform 3s cubic-bezier(0.075, 0.82, 0.165, 1);
-    color:#fff
+    transition: var(--transition1);
+    color: #fff;
   }
 }
 
@@ -369,7 +382,7 @@ button {
   height: 83px;
   border-radius: 100%;
 
-  background: linear-gradient(217deg, #ffc619 0%, #f69020 46.35%, #ec5128 100%);
+  background: var(--gradient_main);
 
   display: flex;
   justify-content: center;
@@ -417,4 +430,36 @@ button {
   top: 0;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.birka_text {
+   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+}
+
+.birka_pre_text {
+  font-family: var(--font-family);
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #fff;
+
+  margin-bottom: 20px;
+}
+
+.birka_text_accent {
+  font-family: var(--font-family);
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 86%;
+  letter-spacing: -0.01em;
+  text-align: center;
+  background: var(--gradient_main);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
