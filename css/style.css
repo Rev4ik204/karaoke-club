@@ -433,7 +433,7 @@ button {
 }
 
 .birka_text {
-   position: absolute;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -80%);
@@ -462,4 +462,54 @@ button {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.hero_use_me_list {
+  display: flex;
+  align-items: center;
+
+  margin-left: -51px;
+  margin-top: 125px;
+
+  
+  
+  position: relative;
+  z-index: 7;
+}
+
+.use_me_item {
+  width: 480px;
+  height: 130px;
+
+  background: #282b32;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+}
+
+.use_me_item:nth-child(2n){
+  background: #202124;
+}
+
+.use_me_item_img {
+}
+
+.use_me_item_line {
+  border: 1px solid rgba(255, 198, 25, 0.3);
+  width: 34px;
+  height: 0px;
+  margin-right: 19px;
+}
+
+.use_me_item_text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+  color: #fff;
+
+  width: 195px;
 }
