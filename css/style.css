@@ -529,3 +529,9 @@ button {
 
   transition: var(--transition1);
 }
+
+/* =====VENUES===== */
+
+.venues_photos_list{
+  display: flex;
+}
