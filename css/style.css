@@ -471,10 +471,11 @@ button {
   margin-left: -51px;
   margin-top: 125px;
 
-  
-  
   position: relative;
   z-index: 7;
+
+  border-bottom: 3px dashed #777575;
+
 }
 
 .use_me_item {
@@ -489,11 +490,22 @@ button {
   gap: 18px;
 }
 
-.use_me_item:nth-child(2n){
+.use_me_item:hover,
+.use_me_item:focus {
+  .use_me_item_img,
+  .use_me_item_text,
+  .use_me_item_line {
+    transform: scale(1.2);
+    transition: var(--transition1);
+  }
+}
+
+.use_me_item:nth-child(2n) {
   background: #202124;
 }
 
 .use_me_item_img {
+  transition: var(--transition1);
 }
 
 .use_me_item_line {
@@ -501,6 +513,8 @@ button {
   width: 34px;
   height: 0px;
   margin-right: 19px;
+
+  transition: var(--transition1);
 }
 
 .use_me_item_text {
@@ -512,4 +526,6 @@ button {
   color: #fff;
 
   width: 195px;
+
+  transition: var(--transition1);
 }
