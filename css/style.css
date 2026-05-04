@@ -475,7 +475,6 @@ button {
   z-index: 7;
 
   border-bottom: 3px dashed #777575;
-
 }
 
 .use_me_item {
@@ -532,6 +531,160 @@ button {
 
 /* =====VENUES===== */
 
-.venues_photos_list{
+.venues .container {
+  position: relative;
+
   display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+.venues_photos {
+  position: relative;
+}
+.venues_big_photo {
+  position: relative;
+}
+.venues_photo {
+}
+.big_bg,
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.big_bg {
+  background: rgba(19, 21, 23, 0.4);
+}
+
+.venues_photos_list {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+}
+
+.venues_photos_item {
+  position: relative;
+}
+
+.venues_photo_slider {
+}
+
+.bg {
+  background: rgba(19, 21, 23, 0.6);
+}
+
+.venues_info {
+  padding-left: 51px;
+  padding-top: 423px;
+}
+
+.venues_info_box {
+  width: 1048px;
+
+  position: absolute;
+  top: 111px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.venues_title {
+  font-family: var(--font-family);
+  font-weight: 900;
+  font-size: 75px;
+  line-height: 109%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
+
+  width: 100%;
+}
+
+.venues_post_title {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 200%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
+
+  width: 432px;
+}
+
+.venues_hall_box {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.hall_select {
+  display: flex;
+  gap: 30px;
+}
+
+.hall_item {
+}
+
+.hall_link {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  color: #606571;
+  text-decoration: none;
+}
+
+.hall_item:first-child .hall_link {
+  color: #ffc619;
+}
+
+.hall_info {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.hall_info_item {
+  display: flex;
+  gap: 11px;
+
+  height: 41px;
+
+  background: linear-gradient(
+    97deg,
+    rgba(246, 144, 32, 0.24) 0%,
+    rgba(246, 144, 32, 0.24) 100%
+  );
+}
+
+.prop1 {
+  width: 134px;
+}
+
+.prop2 {
+  width: 158px;
+}
+
+.prop3 {
+  width: 267px;
+}
+
+.hall_info_item_icon {
+}
+
+.hall_info_item_text {
+}
+
+.img_select_box {
+}
+
+.hero_btn {
 }
