@@ -621,6 +621,8 @@ button {
   display: flex;
   flex-direction: column;
   gap: 35px;
+
+  margin-bottom: 78px;
 }
 
 .hall_select {
@@ -655,8 +657,13 @@ button {
 .hall_info_item {
   display: flex;
   gap: 11px;
+  align-items: center;
 
   height: 41px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 12px;
+  box-sizing: border-box;
 
   background: linear-gradient(
     97deg,
@@ -678,12 +685,68 @@ button {
 }
 
 .hall_info_item_icon {
+  /* width: 21px; */
 }
 
 .hall_info_item_text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  line-height: 100%;
+  color: #fff;
+  padding-top: 5px;
 }
 
 .img_select_box {
+  display: flex;
+  align-items: center;
+  width: 261px;
+  justify-content: space-between;
+
+  margin-bottom: 61px;
+}
+
+.select_left,
+.select_right {
+  border-radius: 100%;
+  width: 70px;
+  height: 70px;
+  border: 2px solid #303237;
+  background-color: transparent;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+
+  transition: var(--transition1);
+}
+
+.select_left:hover,
+.select_left:focus,
+.select_right:hover,
+.select_right:focus {
+  background-color: #303237;
+  transition: var(--transition1);
+}
+
+.select_text {
+  font-family: var(--font-family);
+  font-weight: 500;
+  line-height: 200%;
+  letter-spacing: 0.03em;
+  font-size: 16px;
+  color: #606571;
+
+  span {
+    color: #fff;
+    font-size: 24px;
+  }
+}
+
+.select_right {
 }
 
 .hero_btn {
