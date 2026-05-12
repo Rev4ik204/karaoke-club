@@ -475,7 +475,6 @@ button {
   z-index: 7;
 
   border-bottom: 3px dashed #777575;
-
 }
 
 .use_me_item {
@@ -532,6 +531,56 @@ button {
 
 /* =====VENUES===== */
 
-.venues_photos_list{
-  display: flex;
+.venues_photos {
+  max-width: 1407px;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.venues_photos_list {
+  display: grid;
+  grid-auto-flow: column;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  anchor-name: --carousel;
+  box-sizing: border-box;
+
+  &::scroll-button(*) {
+    position: fixed;
+    position-anchor: --carousel;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    color: #fff;
+  }
+
+  &::scroll-button(right) {
+    position-area: inline-end center;
+    content: ">";
+  }
+
+  &::scroll-button(left) {
+    position-area: inline-start center;
+    content: "<";
+  }
+}
+
+.venues_photos_item {
+  scroll-snap-align: center;
+  position: relative;
+}
+
+.fon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(19, 21, 23, 0.6);
+}
+
+.venues_photo_slider {
+
 }
