@@ -306,6 +306,10 @@ button {
   top: 159px;
   left: 812px;
   z-index: 0;
+
+   mask-image: linear-gradient(to right, transparent 0%, black 25%, black 75%, transparent 100%),
+              linear-gradient(to bottom, transparent 0%, black 5%, black 90%, transparent 100%);
+  mask-composite: intersect;
 }
 
 .hero_img {
@@ -335,6 +339,8 @@ button {
   height: 535px;
   object-fit: cover;
   object-position: 0 0;
+
+  
 }
 
 .scrole_bottom {
