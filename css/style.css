@@ -977,6 +977,8 @@ button {
   padding: 123px 50px 82px 50px;
 
   position: relative;
+
+  overflow: hidden;
 }
 
 .reserv_title {
@@ -1003,22 +1005,66 @@ button {
   margin-bottom: 40px;
 }
 
-.img_select_box {
+.reserv .img_select_box {
   position: absolute;
   right: 50px;
   top: 211px;
+
+  display: flex;
+  align-items: center;
+  user-select: none;
 }
 
 .select_left {
 }
 
-.select_text {
+.reserv .select_text {
+
+  font-family: var(--font-family);
+font-weight: 500;
+
+line-height: 200%;
+letter-spacing: 0.03em;
+
+font-size: 16px;
+color: #606571;
+}
+
+.reserv .select_text span {
+  font-weight: 700;
+  color: #fff;
 }
 
 .select_right {
 }
 
+.arrow_label{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+  cursor: pointer;
+  
+  transition: var(--transition1);
+
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  background-color: #19fffb;
+}
+
+.arrow_label:focus, .arrow_label:hover{
+  background-color: #2E3441;
+}
+
+.carousel-radio{
+  display: none;
+}
+
 .reserv_list {
+  --slide-w:305px;
+  --gap:60px;
+  --step: calc(var(--slide-w) + var(var(--gap)));
 }
 
 .reserv_item {
