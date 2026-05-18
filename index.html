@@ -565,10 +565,26 @@
         </div>
       </section>
       <section class="reserv">
+        <input
+          class="carousel-radio"
+          type="radio"
+          name="slide"
+          id="s1"
+          checked
+        />
+        <input class="carousel-radio" type="radio" name="slide" id="s2" />
+        <input class="carousel-radio" type="radio" name="slide" id="s3" />
+        <input class="carousel-radio" type="radio" name="slide" id="s4" />
+        <input class="carousel-radio" type="radio" name="slide" id="s5" />
+        <input class="carousel-radio" type="radio" name="slide" id="s6" />
+        <input class="carousel-radio" type="radio" name="slide" id="s7" />
+        <input class="carousel-radio" type="radio" name="slide" id="s8" />
+        <input class="carousel-radio" type="radio" name="slide" id="s9" />
+
         <div class="container">
           <h2 class="reserv_title">Как забронировать зал?</h2>
           <p class="reserv_post_title">бронирование по шагам в чат-боте</p>
-          <div class="img_select_box">
+          <!-- <div class="img_select_box">
             <div class="select_left">
               <svg
                 width="12"
@@ -600,7 +616,69 @@
                 />
               </svg>
             </div>
+          </div> -->
+
+          <div class="img_select_box">
+            <!-- Стрілки "назад" — по одній на кожен стан -->
+            <div class="arrow-group">
+              <label class="arrow-label prev-to-1" for="s1">
+                <img src="./images/svg/arrow_left.svg" alt="" />
+              </label>
+              <label class="arrow-label prev-to-2" for="s2">
+                <img src="./images/svg/arrow_left.svg" alt="" />
+              </label>
+              <label class="arrow-label prev-to-3" for="s3">
+                <img src="./images/svg/arrow_left.svg" alt="" />
+              </label>
+              <label class="arrow-label prev-to-4" for="s4">
+                <img src="./images/svg/arrow_left.svg" alt="" />
+              </label>
+              <label class="arrow-label prev-to-5" for="s5">
+                <img src="./images/svg/arrow_left.svg" alt="" />
+              </label>
+              <label class="arrow-label prev-to-6" for="s6">
+                <img src="./images/svg/arrow_left.svg" alt="" />
+              </label>
+              <label class="arrow-label prev-to-7" for="s7">
+                <img src="./images/svg/arrow_left.svg" alt="" />
+              </label>
+              <label class="arrow-label prev-to-8" for="s8">
+                <img src="./images/svg/arrow_left.svg" alt="" />
+              </label>
+            </div>
+
+            <!-- Лічильник: номер підставляється через CSS ::before -->
+            <div class="select_text">из 9</div>
+
+            <!-- Стрілки "вперед" -->
+            <div class="arrow-group">
+              <label class="arrow-label next-to-2" for="s2">
+                <img src="./images/svg/arrow_right.svg" alt="" />
+              </label>
+              <label class="arrow-label next-to-3" for="s3">
+                <img src="./images/svg/arrow_right.svg" alt="" />
+              </label>
+              <label class="arrow-label next-to-4" for="s4">
+                <img src="./images/svg/arrow_right.svg" alt="" />
+              </label>
+              <label class="arrow-label next-to-5" for="s5">
+                <img src="./images/svg/arrow_right.svg" alt="" />
+              </label>
+              <label class="arrow-label next-to-6" for="s6">
+                <img src="./images/svg/arrow_right.svg" alt="" />
+              </label>
+              <label class="arrow-label next-to-7" for="s7">
+                <img src="./images/svg/arrow_right.svg" alt="" />
+              </label>
+              <label class="arrow-label next-to-8" for="s8">
+                <img src="./images/svg/arrow_right.svg" alt="" />
+              </label>
+              <label class="arrow-label next-to-9" for="s9">
+                <img src="./images/svg/arrow_right.svg" alt="" />
+              </label>
+            </div>
           </div>
+
           <ul class="reserv_list">
             <li class="reserv_item">
               <div class="reserv_item_img_box">
@@ -642,59 +720,315 @@
               </div>
             </li>
             <li class="reserv_item">
-              <picture></picture>
+              <div class="reserv_item_img_box">
+                <picture>
+                  <source
+                    srcset="./images/img/screen2_252x474.avif"
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="./images/img/screen2_252x474.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    class="reserv_item_img"
+                    src="./images/img/screen2_252x474.png"
+                    alt="screen_2"
+                  />
+                </picture>
+                <img
+                  src="./images/svg/reserv_rect_140x34.svg"
+                  alt=""
+                  class="reserv_item_rect"
+                />
+                <img
+                  src="./images/svg/border_iphone.svg"
+                  alt=""
+                  class="border_iphone"
+                />
+                <div class="item_num_label">
+                  <p class="num_text">2</p>
+                </div>
+              </div>
               <div class="reserv_item_box">
-                <img src="" alt="" />
-                <p class="reserv_item_text"></p>
+                <img src="./images/svg/icons8_enter_3_32x32.svg" alt="" />
+                <p class="reserv_item_text">
+                  Перейти в чат-бот
+                  <a href="#" class="bot_link">fh_harizma_bot</a>
+                </p>
               </div>
             </li>
             <li class="reserv_item">
-              <picture></picture>
+              <div class="reserv_item_img_box">
+                <picture>
+                  <source
+                    srcset="./images/img/screen1_252x474.avif"
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="./images/img/screen1_252x474.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    class="reserv_item_img"
+                    src="./images/img/screen1_252x474.png"
+                    alt="screen_1"
+                  />
+                </picture>
+                <img
+                  src="./images/svg/reserv_rect_140x34.svg"
+                  alt=""
+                  class="reserv_item_rect"
+                />
+                <img
+                  src="./images/svg/border_iphone.svg"
+                  alt=""
+                  class="border_iphone"
+                />
+                <div class="item_num_label">
+                  <p class="num_text">1</p>
+                </div>
+              </div>
               <div class="reserv_item_box">
-                <img src="" alt="" />
-                <p class="reserv_item_text"></p>
+                <img src="./images/svg/icons8_enter_1_32x32.svg" alt="" />
+                <p class="reserv_item_text">
+                  Перейти в чат-бот
+                  <a href="#" class="bot_link">fh_harizma_bot</a>
+                </p>
               </div>
             </li>
             <li class="reserv_item">
-              <picture></picture>
+              <div class="reserv_item_img_box">
+                <picture>
+                  <source
+                    srcset="./images/img/screen1_252x474.avif"
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="./images/img/screen1_252x474.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    class="reserv_item_img"
+                    src="./images/img/screen1_252x474.png"
+                    alt="screen_1"
+                  />
+                </picture>
+                <img
+                  src="./images/svg/reserv_rect_140x34.svg"
+                  alt=""
+                  class="reserv_item_rect"
+                />
+                <img
+                  src="./images/svg/border_iphone.svg"
+                  alt=""
+                  class="border_iphone"
+                />
+                <div class="item_num_label">
+                  <p class="num_text">1</p>
+                </div>
+              </div>
               <div class="reserv_item_box">
-                <img src="" alt="" />
-                <p class="reserv_item_text"></p>
+                <img src="./images/svg/icons8_enter_1_32x32.svg" alt="" />
+                <p class="reserv_item_text">
+                  Перейти в чат-бот
+                  <a href="#" class="bot_link">fh_harizma_bot</a>
+                </p>
               </div>
             </li>
             <li class="reserv_item">
-              <picture></picture>
+              <div class="reserv_item_img_box">
+                <picture>
+                  <source
+                    srcset="./images/img/screen1_252x474.avif"
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="./images/img/screen1_252x474.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    class="reserv_item_img"
+                    src="./images/img/screen1_252x474.png"
+                    alt="screen_1"
+                  />
+                </picture>
+                <img
+                  src="./images/svg/reserv_rect_140x34.svg"
+                  alt=""
+                  class="reserv_item_rect"
+                />
+                <img
+                  src="./images/svg/border_iphone.svg"
+                  alt=""
+                  class="border_iphone"
+                />
+                <div class="item_num_label">
+                  <p class="num_text">1</p>
+                </div>
+              </div>
               <div class="reserv_item_box">
-                <img src="" alt="" />
-                <p class="reserv_item_text"></p>
+                <img src="./images/svg/icons8_enter_1_32x32.svg" alt="" />
+                <p class="reserv_item_text">
+                  Перейти в чат-бот
+                  <a href="#" class="bot_link">fh_harizma_bot</a>
+                </p>
               </div>
             </li>
             <li class="reserv_item">
-              <picture></picture>
+              <div class="reserv_item_img_box">
+                <picture>
+                  <source
+                    srcset="./images/img/screen1_252x474.avif"
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="./images/img/screen1_252x474.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    class="reserv_item_img"
+                    src="./images/img/screen1_252x474.png"
+                    alt="screen_1"
+                  />
+                </picture>
+                <img
+                  src="./images/svg/reserv_rect_140x34.svg"
+                  alt=""
+                  class="reserv_item_rect"
+                />
+                <img
+                  src="./images/svg/border_iphone.svg"
+                  alt=""
+                  class="border_iphone"
+                />
+                <div class="item_num_label">
+                  <p class="num_text">1</p>
+                </div>
+              </div>
               <div class="reserv_item_box">
-                <img src="" alt="" />
-                <p class="reserv_item_text"></p>
+                <img src="./images/svg/icons8_enter_1_32x32.svg" alt="" />
+                <p class="reserv_item_text">
+                  Перейти в чат-бот
+                  <a href="#" class="bot_link">fh_harizma_bot</a>
+                </p>
               </div>
             </li>
             <li class="reserv_item">
-              <picture></picture>
+              <div class="reserv_item_img_box">
+                <picture>
+                  <source
+                    srcset="./images/img/screen1_252x474.avif"
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="./images/img/screen1_252x474.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    class="reserv_item_img"
+                    src="./images/img/screen1_252x474.png"
+                    alt="screen_1"
+                  />
+                </picture>
+                <img
+                  src="./images/svg/reserv_rect_140x34.svg"
+                  alt=""
+                  class="reserv_item_rect"
+                />
+                <img
+                  src="./images/svg/border_iphone.svg"
+                  alt=""
+                  class="border_iphone"
+                />
+                <div class="item_num_label">
+                  <p class="num_text">1</p>
+                </div>
+              </div>
               <div class="reserv_item_box">
-                <img src="" alt="" />
-                <p class="reserv_item_text"></p>
+                <img src="./images/svg/icons8_enter_1_32x32.svg" alt="" />
+                <p class="reserv_item_text">
+                  Перейти в чат-бот
+                  <a href="#" class="bot_link">fh_harizma_bot</a>
+                </p>
               </div>
             </li>
             <li class="reserv_item">
-              <picture></picture>
+              <div class="reserv_item_img_box">
+                <picture>
+                  <source
+                    srcset="./images/img/screen1_252x474.avif"
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="./images/img/screen1_252x474.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    class="reserv_item_img"
+                    src="./images/img/screen1_252x474.png"
+                    alt="screen_1"
+                  />
+                </picture>
+                <img
+                  src="./images/svg/reserv_rect_140x34.svg"
+                  alt=""
+                  class="reserv_item_rect"
+                />
+                <img
+                  src="./images/svg/border_iphone.svg"
+                  alt=""
+                  class="border_iphone"
+                />
+                <div class="item_num_label">
+                  <p class="num_text">1</p>
+                </div>
+              </div>
               <div class="reserv_item_box">
-                <img src="" alt="" />
-                <p class="reserv_item_text"></p>
+                <img src="./images/svg/icons8_enter_1_32x32.svg" alt="" />
+                <p class="reserv_item_text">
+                  Перейти в чат-бот
+                  <a href="#" class="bot_link">fh_harizma_bot</a>
+                </p>
               </div>
             </li>
             <li class="reserv_item">
-              <picture></picture>
+              <div class="reserv_item_img_box">
+                <picture>
+                  <source
+                    srcset="./images/img/screen1_252x474.avif"
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="./images/img/screen1_252x474.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    class="reserv_item_img"
+                    src="./images/img/screen1_252x474.png"
+                    alt="screen_1"
+                  />
+                </picture>
+                <img
+                  src="./images/svg/reserv_rect_140x34.svg"
+                  alt=""
+                  class="reserv_item_rect"
+                />
+                <img
+                  src="./images/svg/border_iphone.svg"
+                  alt=""
+                  class="border_iphone"
+                />
+                <div class="item_num_label">
+                  <p class="num_text">1</p>
+                </div>
+              </div>
               <div class="reserv_item_box">
-                <img src="" alt="" />
-                <p class="reserv_item_text"></p>
+                <img src="./images/svg/icons8_enter_1_32x32.svg" alt="" />
+                <p class="reserv_item_text">
+                  Перейти в чат-бот
+                  <a href="#" class="bot_link">fh_harizma_bot</a>
+                </p>
               </div>
             </li>
           </ul>
