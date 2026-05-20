@@ -1015,19 +1015,14 @@ button {
   user-select: none;
 }
 
-.select_left {
-}
-
 .reserv .select_text {
-
   font-family: var(--font-family);
-font-weight: 500;
+  font-weight: 500;
 
-line-height: 200%;
-letter-spacing: 0.03em;
-
-font-size: 16px;
-color: #606571;
+  font-size: 18px;
+  color: #606571;
+  min-width: 60px;
+  text-align: center;
 }
 
 .reserv .select_text span {
@@ -1038,37 +1033,219 @@ color: #606571;
 .select_right {
 }
 
-.arrow_label{
+.arrow-label {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 4px;
   cursor: pointer;
-  
+
   transition: var(--transition1);
 
   width: 70px;
   height: 70px;
   border-radius: 100%;
-  background-color: #19fffb;
+  background-color: transparent;
 }
 
-.arrow_label:focus, .arrow_label:hover{
-  background-color: #2E3441;
+.reserv .arrow-label:focus,
+.reserv .arrow-label:hover {
+  background-color: #303237;
+  transition: var(--transition1);
 }
 
-.carousel-radio{
+.carousel-radio {
   display: none;
 }
 
 .reserv_list {
-  --slide-w:305px;
-  --gap:60px;
-  --step: calc(var(--slide-w) + var(var(--gap)));
+  --slide-w: 305px;
+  --gap: 60px;
+  --step: calc(var(--slide-w) + var(--gap));
+
+  --offset: calc(50vw - 50px - var(--slide-w) / 2);
+
+  display: flex;
+  gap: 60px;
+}
+
+#s1:checked ~ .container .reserv_list {
+  transform: translateX(var(--offset));
+}
+#s2:checked ~ .container .reserv_list {
+  transform: translateX(calc(var(--offset) - 1 * var(--step)));
+}
+#s3:checked ~ .container .reserv_list {
+  transform: translateX(calc(var(--offset) - 2 * var(--step)));
+}
+#s4:checked ~ .container .reserv_list {
+  transform: translateX(calc(var(--offset) - 3 * var(--step)));
+}
+#s5:checked ~ .container .reserv_list {
+  transform: translateX(calc(var(--offset) - 4 * var(--step)));
+}
+#s6:checked ~ .container .reserv_list {
+  transform: translateX(calc(var(--offset) - 5 * var(--step)));
+}
+#s7:checked ~ .container .reserv_list {
+  transform: translateX(calc(var(--offset) - 6 * var(--step)));
+}
+#s8:checked ~ .container .reserv_list {
+  transform: translateX(calc(var(--offset) - 7 * var(--step)));
+}
+#s9:checked ~ .container .reserv_list {
+  transform: translateX(calc(var(--offset) - 8 * var(--step)));
+}
+
+#s1:checked ~ .container .select_text::before {
+  content: "1";
+  /* padding-left: 76px; */
+}
+#s2:checked ~ .container .select_text::before {
+  content: "2";
+}
+#s3:checked ~ .container .select_text::before {
+  content: "3";
+}
+#s4:checked ~ .container .select_text::before {
+  content: "4";
+}
+#s5:checked ~ .container .select_text::before {
+  content: "5";
+}
+#s6:checked ~ .container .select_text::before {
+  content: "6";
+}
+#s7:checked ~ .container .select_text::before {
+  content: "7";
+}
+#s8:checked ~ .container .select_text::before {
+  content: "8";
+}
+#s9:checked ~ .container .select_text::before {
+  content: "9";
+}
+#s9:checked ~ .container .select_text {
+  padding-right: 76px;
+}
+
+/* Всі — 50% */
+.reserv_item {
+  opacity: 0.2;
+}
+
+/* Активний — 100% */
+#s1:checked ~ .container .reserv_list .reserv_item:nth-child(1),
+#s2:checked ~ .container .reserv_list .reserv_item:nth-child(2),
+#s3:checked ~ .container .reserv_list .reserv_item:nth-child(3),
+#s4:checked ~ .container .reserv_list .reserv_item:nth-child(4),
+#s5:checked ~ .container .reserv_list .reserv_item:nth-child(5),
+#s6:checked ~ .container .reserv_list .reserv_item:nth-child(6),
+#s7:checked ~ .container .reserv_list .reserv_item:nth-child(7),
+#s8:checked ~ .container .reserv_list .reserv_item:nth-child(8),
+#s9:checked ~ .container .reserv_list .reserv_item:nth-child(9) {
+  opacity: 1;
+
+  .reserv_item_img_box .item_num_label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 61px;
+    height: 61px;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    border-radius: 100%;
+    background: #f69020;
+    box-shadow: 0 12px 12px 0 rgba(0, 0, 0, 0.15);
+  }
+
+  .reserv_item_img_box .border_iphone {
+    /* padding-top: 545px; */
+    display: inline-block;
+    position: absolute;
+    top: 14px;
+    left: 0;
+  }
+}
+
+/* Сусіди ±1 — 75% */
+#s1:checked ~ .container .reserv_list .reserv_item:nth-child(2),
+#s2:checked ~ .container .reserv_list .reserv_item:nth-child(1),
+#s2:checked ~ .container .reserv_list .reserv_item:nth-child(3),
+#s3:checked ~ .container .reserv_list .reserv_item:nth-child(2),
+#s3:checked ~ .container .reserv_list .reserv_item:nth-child(4),
+#s4:checked ~ .container .reserv_list .reserv_item:nth-child(3),
+#s4:checked ~ .container .reserv_list .reserv_item:nth-child(5),
+#s5:checked ~ .container .reserv_list .reserv_item:nth-child(4),
+#s5:checked ~ .container .reserv_list .reserv_item:nth-child(6),
+#s6:checked ~ .container .reserv_list .reserv_item:nth-child(5),
+#s6:checked ~ .container .reserv_list .reserv_item:nth-child(7),
+#s7:checked ~ .container .reserv_list .reserv_item:nth-child(6),
+#s7:checked ~ .container .reserv_list .reserv_item:nth-child(8),
+#s8:checked ~ .container .reserv_list .reserv_item:nth-child(7),
+#s8:checked ~ .container .reserv_list .reserv_item:nth-child(9),
+#s9:checked ~ .container .reserv_list .reserv_item:nth-child(8) {
+  opacity: 0.5;
+
+  .reserv_item_img_box .border_iphone {
+    /* padding-top: 545px; */
+    display: inline-block;
+    position: absolute;
+    top: 14px;
+    left: 0;
+  }
+}
+
+.select_text::before {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 200%;
+  letter-spacing: 0.03em;
+  color: #fff;
+  margin-right: 6px;
+}
+
+.arrow-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.arrow-label {
+  display: none;
+  cursor: pointer;
+}
+
+/* Показуємо стрілку "назад" для відповідного стану */
+#s2:checked ~ .container .prev-to-1,
+#s3:checked ~ .container .prev-to-2,
+#s4:checked ~ .container .prev-to-3,
+#s5:checked ~ .container .prev-to-4,
+#s6:checked ~ .container .prev-to-5,
+#s7:checked ~ .container .prev-to-6,
+#s8:checked ~ .container .prev-to-7,
+#s9:checked ~ .container .prev-to-8 {
+  display: flex;
+}
+
+/* Показуємо стрілку "вперед" для відповідного стану */
+#s1:checked ~ .container .next-to-2,
+#s2:checked ~ .container .next-to-3,
+#s3:checked ~ .container .next-to-4,
+#s4:checked ~ .container .next-to-5,
+#s5:checked ~ .container .next-to-6,
+#s6:checked ~ .container .next-to-7,
+#s7:checked ~ .container .next-to-8,
+#s8:checked ~ .container .next-to-9 {
+  display: flex;
 }
 
 .reserv_item {
   width: 305px;
+  flex-shrink: 0;
 }
 
 .reserv_item_img_box {
@@ -1088,44 +1265,43 @@ color: #606571;
 }
 
 .border_iphone {
-  position: absolute;
-  top: 14px;
-  left: 0;
+  display: none;
 }
 
 .item_num_label {
-  width: 61px;
-  height: 61px;
-
-  position: absolute;
-  top: 0;
-  right: 0;
-
-  border-radius: 100%;
-  background: #f69020;
-  box-shadow: 0 12px 12px 0 rgba(0, 0, 0, 0.15);
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: none;
 }
 
 .num_text {
   font-family: var(--font-family);
-font-weight: 700;
-font-size: 18px;
-line-height: 267%;
-letter-spacing: 0.03em;
-text-align: center;
-color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 267%;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #fff;
 }
 
 .reserv_item_box {
-  margin-top: 529px;
+  padding-top: 550px;
+  padding-left: 18px;
+  width: 250px;
+
+  display: flex;
+  justify-content: start;
+  gap: 16px;
 }
 
 .reserv_item_text {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 133%;
+  letter-spacing: 0.03em;
+  color: #fff;
 }
 
 .bot_link {
+  color: #f69020;
+  text-decoration: none;
 }
