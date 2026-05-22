@@ -1305,3 +1305,160 @@ button {
   color: #f69020;
   text-decoration: none;
 }
+
+/* =====FAQ===== */
+.FAQ .container {
+  padding: 121px 50px 131px 52px;
+}
+
+.FAQ_title {
+  font-family: var(--font-family);
+  font-weight: 900;
+  font-size: 75px;
+  line-height: 109%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
+
+  margin-bottom: 33px;
+}
+
+.FAQ_post_title {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 200%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
+
+  margin-bottom: 45px;
+}
+
+.FAQ_info {
+  display: flex;
+  align-items: start;
+  gap: 64px;
+}
+
+.FAQ_list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  position: relative;
+  z-index: 3;
+}
+
+.FAQ_item {
+}
+
+.FAQ_item_quetion {
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 133%;
+  letter-spacing: 0.03em;
+  color: #fff;
+
+  width: 1201px;
+  height: 80px;
+  padding-top: 28px;
+  padding-left: 24px;
+  padding-bottom: 24px;
+  box-sizing: border-box;
+
+  background: #282b32;
+}
+
+.FAQ_item_quetion::after {
+  width: 43px;
+  height: 43px;
+  box-shadow: 0 9px 16px 0 rgba(0, 0, 0, 0.21);
+  background: #34373f;
+}
+
+.FAQ_item_answer {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 194%;
+  letter-spacing: 0.03em;
+  color: #c5c5c5;
+
+  padding: 24px;
+  padding-left: 25px;
+  padding-bottom: 25px;
+}
+
+.FAQ_main_info_box {
+  position: relative;
+}
+
+.FAQ_main_info_text {
+  position: relative;
+  z-index: 5;
+
+  width: 520px;
+  padding-left: 13px;
+  margin-bottom: 46px;
+
+  font-family: var(--font-family);
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 163%;
+  letter-spacing: 0.03em;
+  color: #fff;
+
+  span {
+    color: #f69020;
+  }
+}
+
+.FAQ_wall {
+  position: absolute;
+  left: -77px;
+  top: -54px;
+
+  -webkit-mask-image:
+    linear-gradient(
+      to right,
+      transparent 0%,
+      black 20%,
+      black 80%,
+      transparent 100%
+    ),
+    linear-gradient(
+      to bottom,
+      transparent 0%,
+      black 15%,
+      black 85%,
+      transparent 100%
+    );
+  mask-image:
+    linear-gradient(
+      to right,
+      transparent 0%,
+      black 20%,
+      black 80%,
+      transparent 100%
+    ),
+    linear-gradient(
+      to bottom,
+      transparent 0%,
+      black 15%,
+      black 85%,
+      transparent 100%
+    );
+  -webkit-mask-composite: intersect;
+  mask-composite: intersect;
+}
+
+.FAQ_slippers {position: relative;
+  z-index: 5;
+
+  margin-bottom: 63px;
+}
+
+.FAQ .hero_btn {margin-left: 144px;
+}
