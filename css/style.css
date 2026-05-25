@@ -555,14 +555,87 @@ button {
   flex-direction: row-reverse;
   justify-content: space-between;
 }
+
 .venues_photos {
   position: relative;
+
+  max-width: 1407px;
 }
+
+input[name="gallery-control"] {
+  display: none;
+}
+
+
+.main_slides{
+  position: relative;
+
+  width: 100%;
+  height: 1000px;
+}
+
+.slide{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  width: 100%;
+  height: 100%;
+  
+  /* opacity:0 ; */
+  transition: opacity 0.4s ease-in-out;
+  
+}
+
+.slide img{
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
+}
+
+.thumbnails-carousel{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+
+  display: flex;
+
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+
+  scroll-snap-type: x mandatory;
+
+}
+
+.thumbnails-carousel::-webkit-scrollbar{
+  display: none;
+  
+}
+
+.thumbnails-carousel{
+  -ms-overflow-style:none;
+  scrollbar-width:none ;
+}
+
+
+
+
+
+
+
+
+
+
 .venues_big_photo {
   position: relative;
 }
+
 .venues_photo {
 }
+
 .big_bg,
 .bg {
   position: absolute;
@@ -1454,11 +1527,13 @@ button {
   mask-composite: intersect;
 }
 
-.FAQ_slippers {position: relative;
+.FAQ_slippers {
+  position: relative;
   z-index: 5;
 
   margin-bottom: 63px;
 }
 
-.FAQ .hero_btn {margin-left: 144px;
+.FAQ .hero_btn {
+  margin-left: 144px;
 }
