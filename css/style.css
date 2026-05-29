@@ -67,7 +67,6 @@ button {
 }
 
 .header_contact_box,
-
 .header_btn_box {
   display: flex;
   gap: 40px;
@@ -555,11 +554,9 @@ button {
 .venues .container {
   position: relative;
 
-  
-
-  /* display: flex;
+  display: flex;
   flex-direction: row-reverse;
-  justify-content: space-between; */
+  justify-content: space-between;
 }
 
 .venues_photos {
@@ -568,8 +565,8 @@ button {
   top: 0;
   right: 0; */
 
-
-  max-width: 1407px;
+  width: 1407px;
+  
 }
 
 input[name="gallery-control"] {
@@ -605,7 +602,7 @@ input[name="gallery-control"] {
 .thumbnails-carousel {
   position: absolute;
   bottom: 0;
-  left:0 ;
+  left: 0;
   width: 100%;
   z-index: 5;
 
@@ -649,31 +646,31 @@ input[name="gallery-control"] {
   pointer-events: none;
 }
 
-#slide-1:checked ~ .main-slides .slide-1,
-#slide-2:checked ~ .main-slides .slide-2,
-#slide-3:checked ~ .main-slides .slide-3,
-#slide-4:checked ~ .main-slides .slide-4,
-#slide-5:checked ~ .main-slides .slide-5,
-#slide-6:checked ~ .main-slides .slide-6,
-#slide-7:checked ~ .main-slides .slide-7,
-#slide-8:checked ~ .main-slides .slide-8,
-#slide-9:checked ~ .main-slides .slide-9,
-#slide-10:checked ~ .main-slides .slide-10 {
+#slide-1:checked ~ .venues_photos .main-slides .slide-1,
+#slide-2:checked ~ .venues_photos .main-slides .slide-2,
+#slide-3:checked ~ .venues_photos .main-slides .slide-3,
+#slide-4:checked ~ .venues_photos .main-slides .slide-4,
+#slide-5:checked ~ .venues_photos .main-slides .slide-5,
+#slide-6:checked ~ .venues_photos .main-slides .slide-6,
+#slide-7:checked ~ .venues_photos .main-slides .slide-7,
+#slide-8:checked ~ .venues_photos .main-slides .slide-8,
+#slide-9:checked ~ .venues_photos .main-slides .slide-9,
+#slide-10:checked ~ .venues_photos .main-slides .slide-10 {
   opacity: 1;
   z-index: 2;
 }
 
 /* 2. Робимо активну мініатюру яскравою та додаємо синю рамку */
-#slide-1:checked ~ .thumbnails-carousel .item-1,
-#slide-2:checked ~ .thumbnails-carousel .item-2,
-#slide-3:checked ~ .thumbnails-carousel .item-3,
-#slide-4:checked ~ .thumbnails-carousel .item-4,
-#slide-5:checked ~ .thumbnails-carousel .item-5,
-#slide-6:checked ~ .thumbnails-carousel .item-6,
-#slide-7:checked ~ .thumbnails-carousel .item-7,
-#slide-8:checked ~ .thumbnails-carousel .item-8,
-#slide-9:checked ~ .thumbnails-carousel .item-9,
-#slide-10:checked ~ .thumbnails-carousel .item-10 {
+#slide-1:checked ~ .venues_photos .thumbnails-carousel .item-1,
+#slide-2:checked ~ .venues_photos .thumbnails-carousel .item-2,
+#slide-3:checked ~ .venues_photos .thumbnails-carousel .item-3,
+#slide-4:checked ~ .venues_photos .thumbnails-carousel .item-4,
+#slide-5:checked ~ .venues_photos .thumbnails-carousel .item-5,
+#slide-6:checked ~ .venues_photos .thumbnails-carousel .item-6,
+#slide-7:checked ~ .venues_photos .thumbnails-carousel .item-7,
+#slide-8:checked ~ .venues_photos .thumbnails-carousel .item-8,
+#slide-9:checked ~ .venues_photos .thumbnails-carousel .item-9,
+#slide-10:checked ~ .venues_photos .thumbnails-carousel .item-10 {
   opacity: 1;
   border-color: #007aff; /* Синій колір рамки, як на скріншоті */
 }
@@ -727,6 +724,9 @@ input[name="gallery-control"] {
   color: #fff;
 
   width: 100%;
+
+  position: relative;
+  z-index: 5;
 }
 
 .venues_post_title {
@@ -822,14 +822,154 @@ input[name="gallery-control"] {
   padding-top: 5px;
 }
 
-.img_select_box {
+.venues .img_select_box {
   display: flex;
   align-items: center;
   width: 261px;
   justify-content: space-between;
 
   margin-bottom: 61px;
+
+  user-select: none;
 }
+
+.venues .select_text {
+  font-family: var(--font-family);
+  font-weight: 500;
+
+  font-size: 18px;
+  color: #606571;
+  min-width: 60px;
+  text-align: center;
+}
+
+.venues .select_text span {
+  font-weight: 700;
+  color: #fff;
+}
+
+.select_right {
+}
+
+.venues .arrow-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+  cursor: pointer;
+
+  transition: var(--transition1);
+
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  background-color: transparent;
+}
+
+.venues .arrow-label:focus,
+.venues .arrow-label:hover {
+  background-color: #303237;
+  transition: var(--transition1);
+}
+
+.venues .carousel-radio {
+  display: none;
+}
+
+.venues{
+#slide-1:checked ~ .venues_info .select_text::before {
+  content: "1";
+  padding-left: 76px;
+}
+#slide-2:checked ~ .venues_info .select_text::before {
+  content: "2";
+}
+#slide-3:checked ~ .venues_info .select_text::before {
+  content: "3";
+}
+#slide-4:checked ~ .venues_info .select_text::before {
+  content: "4";
+}
+#slide-5:checked ~ .venues_info .select_text::before {
+  content: "5";
+}
+#slide-6:checked ~ .venues_info .select_text::before {
+  content: "6";
+}
+#slide-7:checked ~ .venues_info .select_text::before {
+  content: "7";
+}
+#slide-8:checked ~ .venues_info .select_text::before {
+  content: "8";
+}
+#slide-9:checked ~ .venues_info .select_text::before {
+  content: "9";
+}
+#slide-10:checked ~ .venues_info .select_text::before {
+  content: "10";
+}
+#slide-10:checked ~ .venues_info .select_text {
+  padding-right: 76px;
+}}
+
+
+.venues .select_text::before {
+  content: "";
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 200%;
+  letter-spacing: 0.03em;
+  color: #fff;
+  margin-right: 6px;
+}
+
+.venues .arrow-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.venues .arrow-label {
+  display: none;
+  cursor: pointer;
+}
+
+/* Показуємо стрілку "назад" для відповідного стану */
+#slide-2:checked ~ .venues_info .prev-to-1,
+#slide-3:checked ~ .venues_info .prev-to-2,
+#slide-4:checked ~ .venues_info .prev-to-3,
+#slide-5:checked ~ .venues_info .prev-to-4,
+#slide-6:checked ~ .venues_info .prev-to-5,
+#slide-7:checked ~ .venues_info .prev-to-6,
+#slide-8:checked ~ .venues_info .prev-to-7,
+#slide-9:checked ~ .venues_info .prev-to-8,
+#slide-10:checked ~ .venues_info .prev-to-9 {
+  display: flex;
+}
+
+/* Показуємо стрілку "вперед" для відповідного стану */
+#slide-1:checked ~ .venues_info .next-to-2,
+#slide-2:checked ~ .venues_info .next-to-3,
+#slide-3:checked ~ .venues_info .next-to-4,
+#slide-4:checked ~ .venues_info .next-to-5,
+#slide-5:checked ~ .venues_info .next-to-6,
+#slide-6:checked ~ .venues_info .next-to-7,
+#slide-7:checked ~ .venues_info .next-to-8,
+#slide-8:checked ~ .venues_info .next-to-9,
+
+#slide-9:checked ~ .venues_info .next-to-10 {
+  display: flex;
+}
+
+
+
+
+
+
+
+
+
+
 
 .select_left,
 .select_right {
@@ -1574,7 +1714,7 @@ input[name="gallery-control"] {
 
 /* =====FOOTER===== */
 
-.footer .container{
+.footer .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
