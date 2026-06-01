@@ -566,7 +566,6 @@ button {
   right: 0; */
 
   width: 1407px;
-  
 }
 
 input[name="gallery-control"] {
@@ -876,42 +875,42 @@ input[name="gallery-control"] {
   display: none;
 }
 
-.venues{
-#slide-1:checked ~ .venues_info .select_text::before {
-  content: "1";
-  padding-left: 76px;
+.venues {
+  #slide-1:checked ~ .venues_info .select_text::before {
+    content: "1";
+    padding-left: 76px;
+  }
+  #slide-2:checked ~ .venues_info .select_text::before {
+    content: "2";
+  }
+  #slide-3:checked ~ .venues_info .select_text::before {
+    content: "3";
+  }
+  #slide-4:checked ~ .venues_info .select_text::before {
+    content: "4";
+  }
+  #slide-5:checked ~ .venues_info .select_text::before {
+    content: "5";
+  }
+  #slide-6:checked ~ .venues_info .select_text::before {
+    content: "6";
+  }
+  #slide-7:checked ~ .venues_info .select_text::before {
+    content: "7";
+  }
+  #slide-8:checked ~ .venues_info .select_text::before {
+    content: "8";
+  }
+  #slide-9:checked ~ .venues_info .select_text::before {
+    content: "9";
+  }
+  #slide-10:checked ~ .venues_info .select_text::before {
+    content: "10";
+  }
+  #slide-10:checked ~ .venues_info .select_text {
+    padding-right: 76px;
+  }
 }
-#slide-2:checked ~ .venues_info .select_text::before {
-  content: "2";
-}
-#slide-3:checked ~ .venues_info .select_text::before {
-  content: "3";
-}
-#slide-4:checked ~ .venues_info .select_text::before {
-  content: "4";
-}
-#slide-5:checked ~ .venues_info .select_text::before {
-  content: "5";
-}
-#slide-6:checked ~ .venues_info .select_text::before {
-  content: "6";
-}
-#slide-7:checked ~ .venues_info .select_text::before {
-  content: "7";
-}
-#slide-8:checked ~ .venues_info .select_text::before {
-  content: "8";
-}
-#slide-9:checked ~ .venues_info .select_text::before {
-  content: "9";
-}
-#slide-10:checked ~ .venues_info .select_text::before {
-  content: "10";
-}
-#slide-10:checked ~ .venues_info .select_text {
-  padding-right: 76px;
-}}
-
 
 .venues .select_text::before {
   content: "";
@@ -956,20 +955,9 @@ input[name="gallery-control"] {
 #slide-6:checked ~ .venues_info .next-to-7,
 #slide-7:checked ~ .venues_info .next-to-8,
 #slide-8:checked ~ .venues_info .next-to-9,
-
 #slide-9:checked ~ .venues_info .next-to-10 {
   display: flex;
 }
-
-
-
-
-
-
-
-
-
-
 
 .select_left,
 .select_right {
@@ -1595,12 +1583,40 @@ input[name="gallery-control"] {
 
   position: relative;
   z-index: 3;
+
+  width: 100%;
+  max-width: 1200px;
 }
 
-.FAQ_item {
+.faq-item {
+
+
+  background: #282b32;
+
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+
+  transition: var(--transition1);
+}
+
+.faq-item:focus, .faq-item:hover{
+  
+  background: #343740;
+  transition: var(--transition1);
+}
+
+.faq-input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
 }
 
 .FAQ_item_quetion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
   font-family: var(--font-family);
   font-weight: 800;
   font-size: 18px;
@@ -1608,21 +1624,32 @@ input[name="gallery-control"] {
   letter-spacing: 0.03em;
   color: #fff;
 
-  width: 1201px;
-  height: 80px;
-  padding-top: 28px;
-  padding-left: 24px;
-  padding-bottom: 24px;
+  padding: 26px 24px;
   box-sizing: border-box;
-
-  background: #282b32;
+  cursor: pointer;
+  user-select: none;
 }
 
 .FAQ_item_quetion::after {
+  content: "";
+  display: inline-block;
   width: 43px;
   height: 43px;
   box-shadow: 0 9px 16px 0 rgba(0, 0, 0, 0.21);
   background: #34373f;
+  border-radius: 10px;
+
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23f1c40f'%3E%3Cpath d='M7 10l5 5 5-5H7z'/%3E%3C/svg%3E");
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
 }
 
 .FAQ_item_answer {
@@ -1634,8 +1661,15 @@ input[name="gallery-control"] {
   color: #c5c5c5;
 
   padding: 24px;
-  padding-left: 25px;
-  padding-bottom: 25px;
+  
+  border-top: 1px solid #343534;
+}
+
+.faq-input:checked ~ .FAQ_item_quetion::after{
+  transform: rotate(180deg);
+}
+.faq-input:checked ~  .faq-answer{
+  max-height: 500px;
 }
 
 .FAQ_main_info_box {
@@ -1720,4 +1754,10 @@ input[name="gallery-control"] {
   justify-content: space-between;
 
   padding: 91px 204px 94px 41px;
+}
+
+.footer .our_hall_btn{
+  padding:25px 50px ;
+  width:auto ;
+  height: auto;
 }
