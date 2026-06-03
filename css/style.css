@@ -23,6 +23,10 @@
   );
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   box-sizing: border-box;
 
@@ -32,6 +36,10 @@ body {
 
 button {
   cursor: pointer;
+}
+
+a{
+  text-decoration: none;
 }
 
 .container {
@@ -1760,4 +1768,25 @@ input[name="gallery-control"] {
   padding:25px 50px ;
   width:auto ;
   height: auto;
+}
+
+.back-to-top{
+  display: inline-block;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 10;
+
+  background: #333;
+  color: #fff;
+
+  padding:14px 16px ;
+  border-radius: 100%;
+
+  opacity: 1;
+  transition: opacity 0.3s background 0.3s;
+}
+
+.back-to-top:hover,.back-to-top:focus{
+  background: #555;
 }

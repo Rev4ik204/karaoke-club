@@ -9,6 +9,7 @@
     <title>Karaoke Club</title>
   </head>
   <body>
+    <div class="" id="top"></div>
     <header class="header">
       <div class="container">
         <a href="#" class="logo_link">
@@ -41,8 +42,10 @@
           </a>
         </div>
         <div class="header_btn_box">
-          <button class="our_hall_btn">Наши залы</button>
-          <button class="reserve_btn">Забронировать</button>
+          <a href="#venues"><button class="our_hall_btn">Наши залы</button></a>
+          <a href="#reserv"
+            ><button class="reserve_btn">Забронировать</button></a
+          >
         </div>
       </div>
     </header>
@@ -199,7 +202,7 @@
           </ul>
         </div>
       </section>
-      <section class="venues">
+      <section class="venues" id="venues">
         <div class="container">
           <input type="radio" name="gallery-control" id="slide-1" checked />
           <input type="radio" name="gallery-control" id="slide-2" />
@@ -848,7 +851,7 @@
           </div>
         </div>
       </section>
-      <section class="reserv">
+      <section class="reserv" id="reserv">
         <input
           class="carousel-radio"
           type="radio"
@@ -1328,7 +1331,13 @@
           <div class="FAQ_info">
             <div class="FAQ_list">
               <div class="faq-item FAQ_item">
-                <input type="radio" id="faq-1" name="faq" class="faq-input" checked />
+                <input
+                  type="radio"
+                  id="faq-1"
+                  name="faq"
+                  class="faq-input"
+                  checked
+                />
                 <label for="faq-1" class="faq-question FAQ_item_quetion">
                   Какое у вас караоке?
                 </label>
@@ -1415,7 +1424,7 @@
                   </p>
                 </div>
               </div>
-             
+
               <div class="faq-item FAQ_item">
                 <input type="radio" id="faq-7" name="faq" class="faq-input" />
                 <label for="faq-7" class="faq-question FAQ_item_quetion">
@@ -1474,7 +1483,7 @@
         </div>
       </section>
     </main>
-    <div class="container"></div>
+
     <footer class="footer">
       <div class="container">
         <a href="#" class="logo_link">
@@ -1521,5 +1530,20 @@
         </div>
       </div>
     </footer>
+    <a href="#top" class="back-to-top">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="40"
+        height="40"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <polyline points="18 15 12 9 6 15"></polyline>
+      </svg>
+    </a>
   </body>
 </html>
