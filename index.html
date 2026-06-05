@@ -6,18 +6,43 @@
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style_360.css" />
     <title>Karaoke Club</title>
   </head>
   <body>
     <div class="" id="top"></div>
     <header class="header">
       <div class="container">
+        <!-- <picture class="firm_style_img">
+              <source
+                srcset="./images/img/bottels_360-min.png"
+                media="(max-width: 576px)"
+              />
+              <source
+                srcset="./images/img/bottels_576-min.png"
+                media="(max-width: 768px)"
+              />
+              <source
+                srcset="./images/img/bottels_768-min.png"
+                media="(max-width: 992px)"
+              />
+              <source
+                srcset="./images/img/bottels_992-min.png"
+                media="(max-width: 1200px)"
+              />
+              <img src="./images/img/bottels-min.png" alt="bottels" />
+            </picture> -->
         <a href="#" class="logo_link">
-          <img
-            src="./images/svg/logo_02_1_293x67.svg"
-            alt="logo_icon"
-            class="logo_icon"
-          />
+          <picture class="firm_style_img">
+            <source
+              srcset="./images/svg/logo_02_1_162x37.svg"
+              media="(max-width: 576px)" />
+
+            <img
+              src="./images/svg/logo_02_1_293x67.svg"
+              alt="logo_icon"
+              class="logo_icon"
+          /></picture>
         </a>
         <div class="header_contact_box">
           <a href="tel:+380937655023" class="tell_box">
@@ -47,13 +72,17 @@
             ><button class="reserve_btn">Забронировать</button></a
           >
         </div>
+        <img src="./images/svg/burger.svg" alt="" class="burger_btn">
+        <div class="burger_box">
+
+        </div>
       </div>
     </header>
     <main class="main">
       <section class="hero">
         <div class="container">
           <h1 class="hero_title">Арендуй Караоке-Зал до 10 человек</h1>
-          <p class="hero_pre_title">возьми алкоголь и еду с собой</p>
+          <p class="hero_pre_title">возьми алкоголь<br> и еду с собой</p>
           <ul class="hero_benefits_list">
             <li class="hero_benefits_item">
               <div class="hero_svg_block">

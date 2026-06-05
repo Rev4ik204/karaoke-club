@@ -110,8 +110,8 @@ a{
   align-items: center;
 
   svg {
-    width: 29px;
-    height: 29px;
+    width: 34px;
+    height: 34px;
   }
 }
 
@@ -170,6 +170,10 @@ a{
 
   /* color: #000; */
   transition: var(--transition1);
+}
+
+.burger_btn{
+  display: none;
 }
 
 /* =====HERO===== */
