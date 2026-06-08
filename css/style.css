@@ -285,11 +285,15 @@ a{
   font-size: 13px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  text-align: center;
+line-height:100% ;
   color: #252121;
 
   position: relative;
   z-index: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   transition: var(--transition1);
 }

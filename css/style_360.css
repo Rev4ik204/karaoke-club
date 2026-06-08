@@ -67,115 +67,65 @@
     line-height: 133%;
 
     width: 322px;
-    margin-bottom: 70px;
+    margin-bottom: 20px;
   }
 
-  
+  .hero_benefits_list {
+    flex-direction: column;
+    gap: 16px;
 
-  /* .hero_benefits_list {
-    display: flex;
-    align-items: center;
-    gap: 21px;
+    align-items: start;
 
-    margin-bottom: 73px;
+    margin-bottom: 130px;
   }
 
   .hero_benefits_item {
     display: flex;
-    align-items: center;
-    gap: 21px;
-  } */
+    align-items: start;
+    gap: 8px;
 
-  .hero_svg_block {
-    svg {
-      width: 50px;
-      height: 50px;
-    }
+    width: 180px;
+  }
+
+  .hero_benefits_item:nth-child(2) {
+    width: 150px;
+  }
+
+  .hero_benefits_item:nth-child(3) {
+    width: 130px;
   }
 
   .hero_benefits_text {
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 133%;
-    letter-spacing: 0.03em;
-    color: #fff;
+    font-size: 13px;
+    line-height: 138%;
 
     width: 190px;
   }
 
   .lock {
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 15px;
-    letter-spacing: 0.03em;
-    color: #fff;
+    position: static;
 
-    border-radius: 60px;
-    width: 113px;
-    height: 27px;
-
-    background: #343a3e;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    position:relative;
-   
+    margin-bottom: 24px;
   }
 
   .hero_btn {
-    border-radius: 60px;
-    width: 277px;
-    height: 70px;
+    width: 223px;
+    height: 50px;
 
-    background: var(--gradient_main);
-
-    font-family: var(--font-family);
-    font-weight: 700;
-    font-size: 13px;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    text-align: center;
-    color: #252121;
-
-    position: relative;
-    z-index: 1;
-
-    transition: var(--transition1);
-  }
-
-  .hero_btn:focus,
-  .hero_btn:hover {
-    background: var(--gradient_hover);
-    color: #fff;
-    transition: var(--transition1);
-    transform: scale(1.05);
+    font-size: 11px;
   }
 
   .hero_rectangle29 {
-    position: absolute;
-    top: 7px;
-    left: 204px;
-
-    width: 506px;
-    height: 864px;
-
-    background: linear-gradient(
-      180deg,
-      rgba(96, 101, 113, 0) 0%,
-      rgba(96, 101, 113, 0.05) 100%
-    );
+    display: block;
   }
 
   .harizmahall_img {
     position: absolute;
-    top: 159px;
-    left: 812px;
+    top: 200px;
+    left: 0px;
     z-index: 0;
 
-    mask-image:
+    /* mask-image:
       linear-gradient(
         to right,
         transparent 0%,
@@ -190,7 +140,7 @@
         black 90%,
         transparent 100%
       );
-    mask-composite: intersect;
+    mask-composite: intersect; */
   }
 
   .hero_img {
