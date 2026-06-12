@@ -60,12 +60,12 @@
 
     width: 250px;
     margin-bottom: 8px;
-    z-index:20;
   }
 
   .hero_pre_title {
     font-size: 36px;
     line-height: 133%;
+    z-index: 8;
 
     width: 322px;
     margin-bottom: 20px;
@@ -109,11 +109,15 @@
     margin-bottom: 24px;
   }
 
+  .header_btn_box {
+    margin-left: 0px;
+  }
+
   .hero_btn {
     width: 223px;
     height: 50px;
     z-index: 8;
-    
+
     border: none;
     font-size: 11px;
   }
@@ -139,13 +143,12 @@
 
   .dancer_img {
     width: 100%;
-    height: 100%;
+    height: 110%;
     object-fit: cover;
     object-position: 0 0;
   }
 
   .mic_img {
-  
     top: 266px;
     left: 220px;
     z-index: 2;
@@ -154,7 +157,7 @@
     height:293px;
     */
     width: 30%;
-    height: 60%;
+    height: 80%;
   }
 
   .birka {
@@ -194,67 +197,49 @@
   }
 
   .hero_use_me_list {
-    display: flex;
-    align-items: center;
+    flex-wrap: wrap;
+    gap: 0;
 
-    margin-left: -51px;
-    margin-top: 125px;
+    /* width: 360px; */
 
-    position: relative;
-    z-index: 7;
-
-    border-bottom: 3px dashed #777575;
+    margin-left: -22px;
+    margin-right: -22px;
+    margin-top: 32px;
+    box-sizing: border-box;
   }
 
   .use_me_item {
-    width: 480px;
-    height: 130px;
+    width: 200px;
+    height: 103px;
+    padding: 13px 8px 4px 25px;
+    box-sizing: border-box;
 
     background: #282b32;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 18px;
+    justify-content: start;
+    flex-wrap: wrap;
+    row-gap: 5px;
+    column-gap: 10px;
   }
 
-  .use_me_item:hover,
-  .use_me_item:focus {
-    .use_me_item_img,
-    .use_me_item_text,
-    .use_me_item_line {
-      transform: scale(1.2);
-      transition: var(--transition1);
-    }
-  }
-
-  .use_me_item:nth-child(2n) {
+  .use_me_item:nth-child(2),
+  .use_me_item:nth-child(3) {
     background: #202124;
   }
 
-  .use_me_item_img {
-    transition: var(--transition1);
+  .use_me_item:nth-child(4) {
+    background: #282b32;
   }
 
   .use_me_item_line {
-    border: 1px solid rgba(255, 198, 25, 0.3);
-    width: 34px;
-    height: 0px;
+    width: 18px;
     margin-right: 19px;
-
-    transition: var(--transition1);
   }
 
   .use_me_item_text {
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
-    letter-spacing: 0.03em;
-    color: #fff;
+    font-size: 14px;
+    line-height: 136%;
 
-    width: 195px;
-
-    transition: var(--transition1);
+    width: 148px;
   }
 }
