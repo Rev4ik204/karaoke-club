@@ -245,144 +245,25 @@
 
   /* =====VENUES=====  */
 
-  .venues .container {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-  }
-
   .venues_photos {
-    position: relative;
-    /* position: absolute;
-  top: 0;
-  right: 0; */
+    position: absolute;
+    top: 260px;
+    left: 0;
 
-    width: 1407px;
+    width: 360px;
   }
 
   .main-slides {
-    position: relative;
-
-    width: 100%;
-    height: 1000px;
-  }
-
-  .slide {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-
-    width: 100%;
-    height: 100%;
-
-    opacity: 0;
-    transition: opacity 0.4s ease-in-out;
-  }
-
-  .slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: 256px;
   }
 
   .thumbnails-carousel {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    z-index: 5;
-
-    display: flex;
-
-    overflow-x: auto;
-    scroll-behavior: smooth;
-    box-sizing: border-box;
-
-    scroll-snap-type: x mandatory;
-  }
-
-  .thumbnails-carousel::-webkit-scrollbar {
-    display: none;
-  }
-
-  .thumbnails-carousel {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+    position: static;
   }
 
   .thumb-item {
-    flex: 0 0 281px;
-    height: 168px;
-
-    cursor: pointer;
-    opacity: 0.5;
-    transition: all 0.3s ease;
-
-    box-sizing: border-box;
-    border: 3px solid transparent;
-
-    scroll-snap-align: start;
-  }
-
-  .thumb-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    pointer-events: none;
-  }
-
-  #slide-1:checked ~ .venues_photos .main-slides .slide-1,
-  #slide-2:checked ~ .venues_photos .main-slides .slide-2,
-  #slide-3:checked ~ .venues_photos .main-slides .slide-3,
-  #slide-4:checked ~ .venues_photos .main-slides .slide-4,
-  #slide-5:checked ~ .venues_photos .main-slides .slide-5,
-  #slide-6:checked ~ .venues_photos .main-slides .slide-6,
-  #slide-7:checked ~ .venues_photos .main-slides .slide-7,
-  #slide-8:checked ~ .venues_photos .main-slides .slide-8,
-  #slide-9:checked ~ .venues_photos .main-slides .slide-9,
-  #slide-10:checked ~ .venues_photos .main-slides .slide-10 {
-    opacity: 1;
-    z-index: 2;
-  }
-
-  /* 2. Робимо активну мініатюру яскравою та додаємо синю рамку */
-  #slide-1:checked ~ .venues_photos .thumbnails-carousel .item-1,
-  #slide-2:checked ~ .venues_photos .thumbnails-carousel .item-2,
-  #slide-3:checked ~ .venues_photos .thumbnails-carousel .item-3,
-  #slide-4:checked ~ .venues_photos .thumbnails-carousel .item-4,
-  #slide-5:checked ~ .venues_photos .thumbnails-carousel .item-5,
-  #slide-6:checked ~ .venues_photos .thumbnails-carousel .item-6,
-  #slide-7:checked ~ .venues_photos .thumbnails-carousel .item-7,
-  #slide-8:checked ~ .venues_photos .thumbnails-carousel .item-8,
-  #slide-9:checked ~ .venues_photos .thumbnails-carousel .item-9,
-  #slide-10:checked ~ .venues_photos .thumbnails-carousel .item-10 {
-    opacity: 1;
-    border-color: #007aff; /* Синій колір рамки, як на скріншоті */
-  }
-
-  .thumb-item:hover {
-    opacity: 0.8;
-  }
-
-  .thumbnails-carousel::-webkit-scrollbar {
-    height: 8px;
-    display: block;
-  }
-
-  .thumbnails-carousel::-webkit-scrollbar-track {
-    background: #111;
-    border-radius: 4px;
-  }
-  .thumbnails-carousel::-webkit-scrollbar-thumb {
-    background: #444;
-    border-radius: 4px;
-    border: 1px solid #111;
-  }
-
-  .thumbnails-carousel::-webkit-scrollbar-thumb:hover {
-    background: #007aff;
+    flex: 0 0 72px;
+    height: 43px;
   }
 
   .venues_info {
@@ -415,7 +296,6 @@
     gap: 35px;
 
     margin-bottom: 78px;
-    
   }
 
   .hall_select {
@@ -423,7 +303,7 @@
     row-gap: 4px;
     column-gap: 22px;
 
-    margin-bottom: 360px;
+    margin-bottom: 310px;
   }
 
   .hall_item {
@@ -470,12 +350,8 @@
   }
 
   .hall_info_item_text {
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 18px;
-    letter-spacing: 0.05em;
-    line-height: 100%;
-    color: #fff;
+    font-size: 14px;
+
     padding-top: 5px;
   }
 
