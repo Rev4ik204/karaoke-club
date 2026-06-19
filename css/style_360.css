@@ -295,7 +295,7 @@
   .venues_hall_box {
     gap: 35px;
 
-    margin-bottom: 78px;
+    margin-bottom: 28px;
   }
 
   .hall_select {
@@ -306,31 +306,17 @@
     margin-bottom: 310px;
   }
 
-  .hall_item {
-  }
-
   .hall_info {
-    display: flex;
-    flex-direction: column;
     gap: 11px;
   }
 
   .hall_info_item {
-    display: flex;
     gap: 11px;
-    align-items: center;
 
     height: 41px;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 12px;
-    box-sizing: border-box;
-
-    background: linear-gradient(
-      97deg,
-      rgba(246, 144, 32, 0.24) 0%,
-      rgba(246, 144, 32, 0.24) 100%
-    );
   }
 
   .prop1 {
@@ -356,185 +342,40 @@
   }
 
   .venues .img_select_box {
-    display: flex;
-    align-items: center;
-    width: 261px;
-    justify-content: space-between;
+    width: 195px;
 
-    margin-bottom: 61px;
-
-    user-select: none;
+    margin-bottom: 28px;
   }
 
   .venues .select_text {
-    font-family: var(--font-family);
-    font-weight: 500;
-
-    font-size: 18px;
-    color: #606571;
-    min-width: 60px;
-    text-align: center;
-  }
-
-  .venues .select_text span {
-    font-weight: 700;
-    color: #fff;
-  }
-
-  .select_right {
+    font-size: 14px;
+    line-height: 253%;
+    letter-spacing: 0.03em;
   }
 
   .venues .arrow-label {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 4px;
-    cursor: pointer;
 
-    transition: var(--transition1);
-
-    width: 70px;
-    height: 70px;
-    border-radius: 100%;
-    background-color: transparent;
-  }
-
-  .venues .arrow-label:focus,
-  .venues .arrow-label:hover {
-    background-color: #303237;
-    transition: var(--transition1);
-  }
-
-  .venues .carousel-radio {
-    display: none;
+    width: 53px;
+    height: 53px;
   }
 
   .venues {
     #slide-1:checked ~ .venues_info .select_text::before {
       content: "1";
-      padding-left: 76px;
+      padding-left: 60px;
     }
-    #slide-2:checked ~ .venues_info .select_text::before {
-      content: "2";
-    }
-    #slide-3:checked ~ .venues_info .select_text::before {
-      content: "3";
-    }
-    #slide-4:checked ~ .venues_info .select_text::before {
-      content: "4";
-    }
-    #slide-5:checked ~ .venues_info .select_text::before {
-      content: "5";
-    }
-    #slide-6:checked ~ .venues_info .select_text::before {
-      content: "6";
-    }
-    #slide-7:checked ~ .venues_info .select_text::before {
-      content: "7";
-    }
-    #slide-8:checked ~ .venues_info .select_text::before {
-      content: "8";
-    }
-    #slide-9:checked ~ .venues_info .select_text::before {
-      content: "9";
-    }
-    #slide-10:checked ~ .venues_info .select_text::before {
-      content: "10";
-    }
+
     #slide-10:checked ~ .venues_info .select_text {
-      padding-right: 76px;
+      padding-right: 60px;
     }
   }
 
   .venues .select_text::before {
-    content: "";
-    font-family: var(--font-family);
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 200%;
-    letter-spacing: 0.03em;
-    color: #fff;
+    font-size: 19px;
+
     margin-right: 6px;
   }
 
-  .venues .arrow-group {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .venues .arrow-label {
-    display: none;
-    cursor: pointer;
-  }
-
-  /* Показуємо стрілку "назад" для відповідного стану */
-  #slide-2:checked ~ .venues_info .prev-to-1,
-  #slide-3:checked ~ .venues_info .prev-to-2,
-  #slide-4:checked ~ .venues_info .prev-to-3,
-  #slide-5:checked ~ .venues_info .prev-to-4,
-  #slide-6:checked ~ .venues_info .prev-to-5,
-  #slide-7:checked ~ .venues_info .prev-to-6,
-  #slide-8:checked ~ .venues_info .prev-to-7,
-  #slide-9:checked ~ .venues_info .prev-to-8,
-  #slide-10:checked ~ .venues_info .prev-to-9 {
-    display: flex;
-  }
-
-  /* Показуємо стрілку "вперед" для відповідного стану */
-  #slide-1:checked ~ .venues_info .next-to-2,
-  #slide-2:checked ~ .venues_info .next-to-3,
-  #slide-3:checked ~ .venues_info .next-to-4,
-  #slide-4:checked ~ .venues_info .next-to-5,
-  #slide-5:checked ~ .venues_info .next-to-6,
-  #slide-6:checked ~ .venues_info .next-to-7,
-  #slide-7:checked ~ .venues_info .next-to-8,
-  #slide-8:checked ~ .venues_info .next-to-9,
-  #slide-9:checked ~ .venues_info .next-to-10 {
-    display: flex;
-  }
-
-  .select_left,
-  .select_right {
-    border-radius: 100%;
-    width: 70px;
-    height: 70px;
-    border: 2px solid #303237;
-    background-color: transparent;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    cursor: pointer;
-
-    transition: var(--transition1);
-  }
-
-  .select_left:hover,
-  .select_left:focus,
-  .select_right:hover,
-  .select_right:focus {
-    background-color: #303237;
-    transition: var(--transition1);
-  }
-
-  .select_text {
-    font-family: var(--font-family);
-    font-weight: 500;
-    line-height: 200%;
-    letter-spacing: 0.03em;
-    font-size: 16px;
-    color: #606571;
-
-    span {
-      color: #fff;
-      font-size: 24px;
-    }
-  }
-
-  .select_right {
-  }
-
-  .hero_btn {
-  }
+  
 }
