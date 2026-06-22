@@ -404,7 +404,7 @@
 
   .advantage_list {
     gap: 11px;
-    align-items:stretch;
+    align-items: stretch;
 
     width: 360px;
 
@@ -563,5 +563,73 @@
     position: absolute;
     top: 734px;
     left: 255px;
+  }
+
+  /* =====RESERV===== */
+
+  .reserv .container {
+    padding: 67px 18px 155px 18px;
+  }
+
+  .reserv_title {
+    letter-spacing: -0.03em;
+
+    font-size: 36px;
+    line-height: 133%;
+
+    margin-bottom: 27px;
+  }
+
+  .reserv_post_title {
+    width: 280px;
+
+    font-size: 18px;
+    line-height: 128%;
+
+    margin-bottom: 33px;
+  }
+
+  .reserv .img_select_box {
+    position: absolute;
+    left: 24px;
+    top: 940px;
+  }
+
+  .reserv .select_text {
+    font-size: 14px;
+    line-height: 253%;
+  }
+
+  .arrow-label {
+    padding: 4px;
+
+    width: 53px;
+    height: 53px;
+  }
+
+  .reserv_list {
+    --slide-w: 305px;
+    --gap: 60px;
+    --step: calc(var(--slide-w) + var(--gap));
+
+    --offset: calc(50vw - 50px - var(--slide-w) / 2);
+
+    display: flex;
+    gap: 60px;
+  }
+
+  #s1:checked ~ .container .select_text::before {
+    content: "1";
+    padding-left: 70px;
+  }
+
+  #s9:checked ~ .container .select_text {
+    padding-right: 60px;
+  }
+
+  .select_text::before {
+    font-size: 19px;
+
+    margin-right: 6px;
   }
 }
