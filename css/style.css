@@ -1784,6 +1784,10 @@ input[name="gallery-control"] {
   height: auto;
 }
 
+.footer_btn_box, .footer_contact_box{
+  display: none;
+}
+
 .back-to-top{
   display: inline-block;
   position: fixed;

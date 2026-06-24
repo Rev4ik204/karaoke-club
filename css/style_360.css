@@ -717,10 +717,8 @@
 
   .FAQ_wall {
     position: absolute;
-    left:0px;
-    top:200px;
-
-   
+    left: 0px;
+    top: 200px;
   }
 
   .FAQ_slippers {
@@ -732,5 +730,135 @@
   .FAQ .hero_btn {
     margin-left: 0px;
     width: 100%;
+  }
+
+  /* =====FOOTER===== */
+
+  .footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    gap: 29px;
+
+    padding: 18px;
+  }
+
+  .footer .our_hall_btn {
+    padding: 25px 50px;
+    width: auto;
+    height: auto;
+  }
+
+  .footer {
+    .header_contact_box,
+    .header_btn_box {
+      display: none;
+    }
+
+    .footer_contact_box,
+    .footer_btn_box {
+      display: block;
+    }
+
+    .footer_contact_box,
+    .footer_btn_box {
+      display: flex;
+      flex-direction: column;
+      gap: 13px;
+      align-items: start;
+    }
+
+    .footer_contact_box {
+      flex-direction: column-reverse;
+    }
+
+    .tell_box,
+    .calendar_box,
+    .location_box {
+      display: flex;
+      align-items: center;
+      gap: 17px;
+    }
+
+    .header_btn_box {
+    }
+
+    .location_box {
+    }
+
+    .location_text {
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 15px;
+      letter-spacing: 0.03em;
+      color: #ffffff;
+    }
+
+    .tell_box:hover,
+    .tell_box:focus,
+    .location_box:hover,
+    .location_box:focus {
+      .tell_text,
+      .location_text {
+        color: #f69020;
+        transition: var(--transition1);
+      }
+      svg {
+        filter: brightness(0) saturate(100%) invert(56%) sepia(98%)
+          saturate(574%) hue-rotate(345deg) brightness(98%) contrast(96%);
+        transition: var(--transition1);
+      }
+    }
+
+    .our_hall_btn,
+    .reserve_btn {
+      border: 1px solid #393c43;
+      border-radius: 40px;
+      width: 204px;
+      height: 60px;
+
+      background: rgba(255, 255, 255, 0);
+
+      font-family: var(--font-family);
+      font-weight: 700;
+      font-size: 13px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      text-align: center;
+      color: #fff;
+    }
+
+    .our_hall_btn:hover,
+    .our_hall_btn:focus,
+    .reserve_btn:hover,
+    .reserve_btn:focus {
+      background: var(--gradient_hover);
+
+      /* color: #000; */
+      transition: var(--transition1);
+    }
+  }
+
+  .back-to-top {
+    display: inline-block;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 10;
+
+    background: #333;
+    color: #fff;
+
+    padding: 14px 16px;
+    border-radius: 100%;
+
+    opacity: 1;
+    transition: opacity 0.3s background 0.3s;
+  }
+
+  .back-to-top:hover,
+  .back-to-top:focus {
+    background: #555;
   }
 }

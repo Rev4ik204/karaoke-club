@@ -13,25 +13,6 @@
     <div class="" id="top"></div>
     <header class="header">
       <div class="container">
-        <!-- <picture class="firm_style_img">
-              <source
-                srcset="./images/img/bottels_360-min.png"
-                media="(max-width: 576px)"
-              />
-              <source
-                srcset="./images/img/bottels_576-min.png"
-                media="(max-width: 768px)"
-              />
-              <source
-                srcset="./images/img/bottels_768-min.png"
-                media="(max-width: 992px)"
-              />
-              <source
-                srcset="./images/img/bottels_992-min.png"
-                media="(max-width: 1200px)"
-              />
-              <img src="./images/img/bottels-min.png" alt="bottels" />
-            </picture> -->
         <a href="#" class="logo_link">
           <picture class="firm_style_img">
             <source
@@ -1983,11 +1964,18 @@
     <footer class="footer">
       <div class="container">
         <a href="#" class="logo_link">
-          <img
-            src="./images/svg/logo_02_1_293x67.svg"
-            alt="logo_icon"
-            class="logo_icon"
-          />
+          <picture class="firm_style_img">
+            <source
+              srcset="./images/svg/logo_02_1_162x37.svg"
+              media="(max-width: 576px)"
+            />
+
+            <img
+              src="./images/svg/logo_02_1_293x67.svg"
+              alt="logo_icon"
+              class="logo_icon"
+            />
+          </picture>
         </a>
         <div class="header_contact_box">
           <a href="tel:+380937655023" class="tell_box">
@@ -2023,6 +2011,34 @@
         </div>
         <div class="header_btn_box">
           <button class="our_hall_btn">Построить маршрут</button>
+        </div>
+        <div class="footer_contact_box">
+          <a href="tel:+380937655023" class="tell_box">
+            <div class="svg_block">
+              <svg>
+                <use
+                  href="./images/spriteSvg.svg#icon-icons8_shake_phone"
+                ></use>
+              </svg>
+            </div>
+            <p class="tell_text">380 (93) 765-50-23</p>
+          </a>
+          <a href="#" class="location_box">
+            <div class="svg_block">
+              <svg>
+                <use
+                  href="./images/spriteSvg.svg#icon-icons8_marker_1_34x34"
+                ></use>
+              </svg>
+            </div>
+            <p class="location_text">м. Лубянка</p>
+          </a>
+        </div>
+        <div class="footer_btn_box">
+          <a href="#venues"><button class="our_hall_btn">Наши залы</button></a>
+          <a href="#reserv">
+            <button class="reserve_btn">Забронировать</button>
+          </a>
         </div>
       </div>
     </footer>
