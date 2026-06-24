@@ -717,51 +717,20 @@
 
   .FAQ_wall {
     position: absolute;
-    left: -77px;
-    top: -54px;
+    left:0px;
+    top:200px;
 
-    -webkit-mask-image:
-      linear-gradient(
-        to right,
-        transparent 0%,
-        black 20%,
-        black 80%,
-        transparent 100%
-      ),
-      linear-gradient(
-        to bottom,
-        transparent 0%,
-        black 15%,
-        black 85%,
-        transparent 100%
-      );
-    mask-image:
-      linear-gradient(
-        to right,
-        transparent 0%,
-        black 20%,
-        black 80%,
-        transparent 100%
-      ),
-      linear-gradient(
-        to bottom,
-        transparent 0%,
-        black 15%,
-        black 85%,
-        transparent 100%
-      );
-    -webkit-mask-composite: intersect;
-    mask-composite: intersect;
+   
   }
 
   .FAQ_slippers {
-    position: relative;
-    z-index: 5;
+    margin: 0 auto;
 
     margin-bottom: 63px;
   }
 
   .FAQ .hero_btn {
-    margin-left: 144px;
+    margin-left: 0px;
+    width: 100%;
   }
 }
