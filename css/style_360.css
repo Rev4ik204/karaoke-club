@@ -759,6 +759,8 @@
     .footer_contact_box,
     .footer_btn_box {
       display: block;
+      margin: 0;
+      padding: 0;
     }
 
     .footer_contact_box,
@@ -774,11 +776,12 @@
     }
 
     .tell_box,
-    .calendar_box,
     .location_box {
       display: flex;
       align-items: center;
       gap: 17px;
+      margin: 0;
+      padding: 0;
     }
 
     .header_btn_box {
@@ -788,31 +791,12 @@
     }
 
     .location_text {
-      font-family: var(--font-family);
-      font-weight: 400;
-      font-size: 15px;
-      letter-spacing: 0.03em;
-      color: #ffffff;
-    }
-
-    .tell_box:hover,
-    .tell_box:focus,
-    .location_box:hover,
-    .location_box:focus {
-      .tell_text,
-      .location_text {
-        color: #f69020;
-        transition: var(--transition1);
-      }
-      svg {
-        filter: brightness(0) saturate(100%) invert(56%) sepia(98%)
-          saturate(574%) hue-rotate(345deg) brightness(98%) contrast(96%);
-        transition: var(--transition1);
-      }
+      display: block;
     }
 
     .our_hall_btn,
     .reserve_btn {
+      display: block;
       border: 1px solid #393c43;
       border-radius: 40px;
       width: 204px;

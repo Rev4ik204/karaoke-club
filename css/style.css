@@ -1779,13 +1779,19 @@ input[name="gallery-control"] {
 }
 
 .footer .our_hall_btn{
-  padding:25px 50px ;
-  width:auto ;
-  height: auto;
+  padding:25px 20px ;
+  width:235px ;
+  height: 60px;
 }
 
 .footer_btn_box, .footer_contact_box{
   display: none;
+}
+
+.footer .header_contact_box, .footer .header_btn_box{
+  margin: 0;
+  padding: 0;
+
 }
 
 .back-to-top{
